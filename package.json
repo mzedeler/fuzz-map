@@ -1,0 +1,26 @@
+{
+  "name": "fuzz-map",
+  "version": "1.0.0",
+  "description": "Fuzzy mapping for javascript",
+  "main": "js/index.js",
+  "dependencies": {
+    "leven": "^2.0.0"
+  },
+  "devDependencies": {
+    "husky": "^0.11.6"
+  },
+  "scripts": {
+    "test": "mocha --recursive js",
+    "tdd": "nodemon --exec node_modules/.bin/mocha --recursive js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mzedeler/fuzz-map.git"
+  },
+  "author": "Michael Zedeler <michael@zedeler.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mzedeler/fuzz-map/issues"
+  },
+  "homepage": "https://github.com/mzedeler/fuzz-map#readme"
+}
