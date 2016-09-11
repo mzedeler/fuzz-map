@@ -1,6 +1,6 @@
 {
   "name": "fuzz-map",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fuzzy mapping for javascript",
   "main": "js/index.js",
   "dependencies": {
