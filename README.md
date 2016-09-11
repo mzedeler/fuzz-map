@@ -3,6 +3,8 @@
 
 Fuzzy lookup in deep data structures
 
+![build status](https://travis-ci.org/mzedeler/fuzz-map.svg?branch=master)
+
 ## Usage
 
 FuzzMap is a tool that does fuzzy lookup in data structures, returning whatever matches best.
