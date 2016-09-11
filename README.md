@@ -85,6 +85,28 @@ on each lookup:
 Setting the tolerance to 0 means no errors are allowed. Setting it to 1 means that everything
 will match (but the best match will always be returned).
 
+
+### Inspecting intermediate results
+
+The result from a lookup *always* has the resulting underlying data structure available in the property `obj`.
+
+This makes it possible to inspect the intermediate results:
+
+    const FuzzMap = require('fuzz-map');
+
+    const fm = FuzzMap({
+      'The quick brown fox': {
+        'jumped over the brown': 'fence'
+      }
+    });
+
+    console.log(fm('deep')('quick brown fox').obj);
+    // Output:
+    // { one: 'one quick brown fox', two: 'two quick brown fox' }
+
+This also applies to vanilla data structures (without a custom function call as in the example above).
+
+
 ## Bugs
 
 If you find a bug, please report it at https://github.com/mzedeler/fuzz-map/issues
