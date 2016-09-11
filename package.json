@@ -7,7 +7,8 @@
     "leven": "^2.0.0"
   },
   "devDependencies": {
-    "husky": "^0.11.6"
+    "husky": "^0.11.6",
+    "mocha": "^3.0.2"
   },
   "scripts": {
     "test": "mocha --recursive js",
